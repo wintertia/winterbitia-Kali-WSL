@@ -13,7 +13,7 @@
             "max_depth": 2
           },
           "style": "diamond",
-          "template": " <cyan>\u256d\ueaf7</>  <b>{{ .Path }}</b>",
+          "template": " <cyan></>  <b>{{ .Path }}</b>",
           "type": "path"
         },
         {
@@ -41,7 +41,7 @@
             "cache_duration": "none"
           },
           "style": "plain",
-          "template": " \u2570\u2500>",
+          "template": "  ",
           "type": "text"
         }
       ],
@@ -49,19 +49,8 @@
     }
   ],
   "secondary_prompt": {
-    "alignment": "left",
-    "segments": [
-      {
-        "foreground": "cyan",
-        "properties": {
-          "cache_duration": "none"
-        },
-        "style": "plain",
-        "template": " \u2570>>",
-        "type": "text"
-      }
-    ],
-    "type": "prompt"
+    "foreground": "cyan",
+    "template": "   "
   },
   "console_title_template": "{{ .Shell }} in {{ .Folder }}",
   "final_space": true,

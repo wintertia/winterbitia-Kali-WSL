@@ -32,6 +32,7 @@ export PATH=$PATH:/home/winter/.local/bin:/home/winter/.cargo/bin
 eval "$(oh-my-posh init zsh --config ~/.config/ohmyposh/json.json)"
 
 # Keybindings
+bindkey -r '\e\e'
 bindkey '^[w' kill-region			# Alt + W
 bindkey ' ' magic-space				# Space
 bindkey '5~' kill-word				# C + Del
